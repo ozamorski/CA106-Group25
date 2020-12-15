@@ -1,91 +1,32 @@
 /* START OF MAIN IMAGE*/
+body{
+  background-color: white;
+}
+
 .main-image{
-    height: 800px;
-    width: 100%;
-    background-image: url("../images/esports.jpg");
+  height: 800px;
+  width: 100%;
+  background-image: url("../images/esports.jpg");
 }
 
 .image-text{
-    color: white;
-    float: right;
-    margin: 10px;
-    padding:1%;
-    border-radius: 5px;
-    background-color: #3B2C55;
+  color: white;
+  float: right;
+  margin: 10px;
+  padding:1%;
+  border-radius: 5px;
+  background-color: #3B2C55;
 }
 /* END OF MAIN IMAGE */
 
 /* START OF GAMES */
-#images{
-  background-color: #EFE4FA;
-  margin-top: 5px;
+.overview{
+  width: 35%;
+  margin: 10px 10px 10px 0;
 }
 
-h2{
-  font-family: Righteous;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
+p{
   padding: 10px;
-}
-
-.gallery img{
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
-}
-
-.gallery{
-  display: flex;
-  justify-content: center; 
-}
-
-.image-container {
-  border: 5px solid;
-  border-radius: 33px;
-  position: relative;
-  display: inline-block;
-  margin: 20px 50px;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top:0;                 
-  left: 0;
-  opacity: 0;
-  transition:all .3s ease;
-  background-color: #3B2C55;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.overlay p{ 
-  color: white;
-  font-size: 0.9vw;
-  position: relative;
-  text-align: center;
-  word-wrap: break-word;
-  padding: 0 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.image-container:hover .overlay{
-  opacity: 0.975;
-}
-
-.learn-more{
-  background-color: grey;
-  width: 50%;
-  padding: 1%;
-  border-radius: 10px;
-}
-
-.overlay a{
-  text-decoration: none;
 }
 
 img {
@@ -94,10 +35,19 @@ img {
   display: block;
   object-fit: cover;
 }
-/* Hexagon pictures, source: https://codepen.io/izer/pen/RYvevG */
+
+#hex-games{
+  margin: 10px 0;
+}
+
+.games{
+  background-color: #D3C1E5;
+  padding: 5px 0 40px 250px;
+}
+
 .hexagon-gallery {
-  margin: auto;
-  margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -111,7 +61,6 @@ img {
   position: relative;
   width: 240px;
   height: 265px;
-  background-color: #424242;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
@@ -119,7 +68,7 @@ img {
 .hex:first-child {
   grid-row-start: 1;
   grid-column: 2 / span 2;
-}
+  }
 
 .hex:nth-child(2) {
   grid-row-start: 1;
@@ -146,23 +95,51 @@ img {
   grid-column: 4 / span 2;
 }
 
-.hex:nth-child(7) {
-  grid-row-start: 3;
-  grid-column: 7 / span 2;
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;                 
+  left: 0;
+  opacity: 0;
+  transition:all .3s ease;
+  background-color: #3B2C55;
+  border-radius: 25px;
+  overflow: hidden;
+  }
+  
+.overlay p{ 
+  color: white;
+  font-size: 0.75vw;
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 0 10px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .hex:hover .overlay{
+    opacity: 1;
+  }
+  
+.learn-more{
+  background-color: grey;
+  width: 50%;
+  padding: 1%;
+  border-radius: 10px;
+  }
+
+.learn-more:hover{
+  background-color: #908F8F;
 }
 
-.hex:nth-child(8) {
-  grid-row-start: 3;
-  grid-column: 2 / span 2;
+.overlay a{
+  text-decoration: none;
 }
 
-.hex:nth-child(9) {
-  grid-row-start: 3;
-  grid-column: 4 / span 2;
-}
-
-.hex:nth-child(10) {
-  grid-row-start: 3;
-  grid-column: 6 / span 2;
+section{
+  background-color: #D3C1E5;
 }
 /* END OF GAMES */
