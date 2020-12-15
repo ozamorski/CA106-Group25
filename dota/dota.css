@@ -1,0 +1,73 @@
+body {
+    background-color: #9F3B3B;
+}
+
+#heading {
+    color: black;
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.text_body {
+    margin: 0 25%;
+    background-color: rgb(92, 41, 41);
+    padding: 0 20px 60px;
+  }
+  
+#dota_title {
+    font-size: 72pt;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.pic {
+    width: 35%;
+    float: right;
+    margin: 10px;
+    background-color: rgb(104, 104, 104);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#navi {
+    text-align: center;
+    width: 100%;
+}
+
+#vid {
+    text-align: center;
+}
+
+#sad {
+    width: 20%;
+}
+
+.pic:hover {
+    transform: scale(1.9);
+}
+
+.description {
+    margin-top: 0px;
+    font-style: italic;
+    font-size: x-small;
+}
+
+p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
